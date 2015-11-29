@@ -34,6 +34,10 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
         snackBar.hide(1.0, delay: 0.0)
 
 
+##Customization ##
+This is all the properties in AASnackbar the you will be able to customize from your base view controller.
+
+
 
 
 ## Requierments ##
