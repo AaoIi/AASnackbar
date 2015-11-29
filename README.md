@@ -6,6 +6,35 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
 ## Preview Demo
 <img src="https://lh3.googleusercontent.com/XFXSADrx5M_CmE-NjJDZ1RLcpnrxL-GMMJgBF_igZAony6KQMUNCYA=w373-h642-p-b1-c0x00999999">
 
+## How to use AASnackbar ##
+##### 1) import ```AASnackbar.swift``` into your project <br/>
+#####2) Create object from AASnackbar ```var snackBar = AASnackbar()``` <br/>
+#####3) Show AASnackbar:<br/><br/>     3.1) Without action:<br/>
+
+        // send the current view frame and set the text with duration, the button is hidden thus there is no action.
+        snackBar = AASnackbar(frame: self.view.frame)
+        snackBar.setTextTitle("No internet connection")
+        snackBar.setDuration(3)
+        snackBar.hideButton(true)
+        self.view.addSubview(snackBar)
+        
+##### 3.2) With action:<br/> 
+
+       // send the current view frame and set the text with duration, the button by default is showen we may customize it and add an action into it.
+        snackBar = AASnackbar(frame: self.view.frame)
+        snackBar.setTextTitle("No Internet connection")
+        snackBar.setDuration(3)
+        snackBar.setButtonTitle("OK")
+        snackBar.addButtonAction("showAlert:", view: self)
+        self.view.addSubview(snackBar)
+        
+##### 4) Hide AASnackbar (optional):<br/> 
+
+        // By default snackbar has duration to show and hide itself,this can be used to force hiding snackbar while its currently showing.
+        snackBar.hide(1.0, delay: 0.0)
+
+
+
 
 ## Requierments ##
 * Swift 1.2+
