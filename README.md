@@ -7,6 +7,10 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
 <img src="https://lh6.googleusercontent.com/u9sMVS9MZ0jkD5pvo5Blc-tgAb0n0C2gD8VtPfW26whDqX6byLHhUg=w373-h664-p-b1-c0x00999999">
 
 
+## Requierments ##
+* Swift 1.2+
+* IOS 7.0+
+
 ## License ##
 
 The MIT License (MIT)
