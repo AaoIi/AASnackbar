@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nxd-fg-Bfo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AASnackbar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AASnackbar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,83 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ox-VY-CLT">
+                                <rect key="frame" x="216" y="261" width="169" height="30"/>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.57647058819999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="toQ-3O-OKd"/>
+                                </constraints>
+                                <state key="normal" title="Show AASnackbar">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSnackbar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="APm-an-Vsg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk7-UT-17r">
+                                <rect key="frame" x="184" y="299" width="232" height="30"/>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.57647058819999997" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="P1Q-vV-eI8"/>
+                                </constraints>
+                                <state key="normal" title="Show AASnackbar with action">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSnackbarWithAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A4E-1F-loE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klr-el-h4h">
+                                <rect key="frame" x="216" y="337" width="169" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Hide AASnackbar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideSnackbar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jKq-8Y-9aa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mk7-UT-17r" firstAttribute="centerX" secondItem="8ox-VY-CLT" secondAttribute="centerX" id="IJk-3a-iWh"/>
+                            <constraint firstItem="mk7-UT-17r" firstAttribute="top" secondItem="8ox-VY-CLT" secondAttribute="bottom" constant="8" symbolic="YES" id="Oie-FH-NH0"/>
+                            <constraint firstItem="8ox-VY-CLT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="197" id="Rhp-5v-BIu"/>
+                            <constraint firstItem="Klr-el-h4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TvF-Mh-daB"/>
+                            <constraint firstItem="Klr-el-h4h" firstAttribute="trailing" secondItem="8ox-VY-CLT" secondAttribute="trailing" id="mDH-gL-AyY"/>
+                            <constraint firstItem="Klr-el-h4h" firstAttribute="top" secondItem="8ox-VY-CLT" secondAttribute="bottom" constant="46" id="qab-Ar-cgQ"/>
+                            <constraint firstItem="Klr-el-h4h" firstAttribute="leading" secondItem="8ox-VY-CLT" secondAttribute="leading" id="yrZ-wp-iKf"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="AASnackbar" id="8U8-uR-mgm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1056" y="278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bYz-cs-eQr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nxd-fg-Bfo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="aGx-kY-jLU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0Xp-jd-au7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LqG-Zy-58x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="278"/>
         </scene>
     </scenes>
 </document>

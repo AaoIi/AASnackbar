@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  AASnackbar
 //
-//  Created by user on 11/29/15.
+//  Created by AaoIi on 11/29/15.
 //  Copyright © 2015 Saad Albasha. All rights reserved.
 //
 
