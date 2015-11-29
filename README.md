@@ -37,8 +37,27 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
 ##Customization ##
 This is all the properties in AASnackbar the you will be able to customize from your base view controller.
 
+#### 1) Background Color<br/>
+        backgroundColor = UIColor
+        
+#### 2) Text Color and Title<br/>
+        setTextTitle("sometext")
+        setTextColor(UIColor)
+        
+#### 3) Button Text Color and Title and Action<br/>
+        setButtonTitle("sometext")
+        setButtonTextColor(UIColor)
+        addButtonAction(selector, view: UIViewController)
 
 
+#### 4) Set Button hidden (true = no Action)<br/>
+        hideButton(Bool)
+
+#### 5) Show Duration<br/>
+        setDuration(NSTimeInterval)
+
+#### 6) Show Duration<br/>
+        hide(duration: NSTimeInterval, delay: NSTimeInterval)
 
 ## Requierments ##
 * Swift 1.2+
