@@ -53,10 +53,10 @@ This is all the properties in AASnackbar the you will be able to customize from 
 #### 4) Set Button hidden (true = no Action)<br/>
         hideButton(Bool)
 
-#### 5) Show Duration<br/>
+#### 5) Show duration<br/>
         setDuration(NSTimeInterval)
 
-#### 6) Show Duration<br/>
+#### 6) Hide<br/>
         hide(duration: NSTimeInterval, delay: NSTimeInterval)
 
 ## Requierments ##
