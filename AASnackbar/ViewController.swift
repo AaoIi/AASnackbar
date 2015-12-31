@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var snackBar = AASnackbar()
+    var snackBar : AASnackbar!
 
     
     override func viewDidLoad() {
@@ -28,11 +28,8 @@ class ViewController: UIViewController {
     
     @IBAction func showSnackbar(sender: AnyObject) {
         
-        snackBar = AASnackbar(frame: self.view.frame)
-        snackBar.setTextTitle("No internet connection")
+        snackBar = AASnackbar(frame: self.view.frame, title: "No internet connection", duration: 3.0,animationType:.Fade)
         snackBar.setTextColor(UIColor.whiteColor())
-        snackBar.setDuration(3)
-        snackBar.hideButton(true)
         self.view.addSubview(snackBar)
 
     }
@@ -41,10 +38,7 @@ class ViewController: UIViewController {
     
     @IBAction func showSnackbarWithAction(sender: AnyObject) {
         
-        snackBar = AASnackbar(frame: self.view.frame)
-        snackBar.setTextTitle("No Internet connection")
-        snackBar.setDuration(3)
-        snackBar.setButtonTitle("OK")
+        snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .Translation)
         snackBar.setButtonTextColor(UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1.0))
         snackBar.addButtonAction("showAlert:", view: self)
         self.view.addSubview(snackBar)
@@ -67,7 +61,7 @@ class ViewController: UIViewController {
 
     @IBAction func hideSnackbar(sender: AnyObject) {
         
-        snackBar.hide(1.0, delay: 0.0)
+        snackBar.hideWithFade(0.5, delay: 0.0)
 
         
     }
