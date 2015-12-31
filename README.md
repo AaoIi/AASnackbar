@@ -34,6 +34,24 @@ self.view.addSubview(snackBar)
 // By default snackbar has duration to show and hide itself,this can be used to force hiding snackbar while its currently showing. so if you are showing the snackbar with fade then use fade to hide and same for translation.
 snackBar.hideWithFade(1.0, delay: 0.0)
 snackBar.hideWithTranslation(1.0, delay: 0.0)
+=======
+        // send the current view frame and set the text with duration, and animation type fade or translation.
+        snackBar = AASnackbar(frame: self.view.frame, title: "No internet connection", duration: 3.0,animationType:.Fade)
+        self.view.addSubview(snackBar)
+        
+##### 3.2) With action:<br/> 
+
+       // send the current view frame and set the text with duration,by setting button title makes button visable
+        snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .Translation)
+        snackBar.addButtonAction("showAlert:", view: self)
+        self.view.addSubview(snackBar)
+        
+##### 4) Hide AASnackbar (optional):<br/> 
+
+        // By default snackbar has duration to show and hide itself,this can be used to force hiding snackbar while its currently showing. so if you are showing the snackbar with fade then use fade to hide and same for translation.
+        snackBar.hideWithFade(1.0, delay: 0.0)
+        snackBar.hideWithTranslation(1.0, delay: 0.0)
+>>>>>>> origin/master
 
 ##Customization ##
 This is all the properties in AASnackbar the you will be able to customize from your base view controller.
@@ -52,6 +70,21 @@ addButtonAction(selector, view: UIViewController)
 hideWithFade(duration: NSTimeInterval, delay: NSTimeInterval)
 hideWithTranslation(duration: NSTimeInterval, delay: NSTimeInterval)
 
+=======
+        backgroundColor = UIColor
+        
+#### 2) Text Color<br/>
+        setTextColor(UIColor)
+        
+#### 3) Button Text Color and Action<br/>
+        setButtonTextColor(UIColor)
+        addButtonAction(selector, view: UIViewController)
+
+#### 4) Force hiding<br/>
+        hideWithFade(duration: NSTimeInterval, delay: NSTimeInterval)
+        hideWithTranslation(duration: NSTimeInterval, delay: NSTimeInterval)
+        
+>>>>>>> origin/master
 ## Requierments ##
 * Swift 2.0+
 * IOS 7.0+
