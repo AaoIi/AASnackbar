@@ -62,7 +62,6 @@ class ViewController: UIViewController {
     @IBAction func hideSnackbar(sender: AnyObject) {
         
         snackBar.hideWithFade(0.5, delay: 0.0)
-
         
     }
 
