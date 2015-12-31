@@ -4,7 +4,7 @@
 
 ####1.1 Release (12/31/2015)
 
-*Major changes and much easier to use.
+*Major changes and much easier to use.<br/>
 *Bug fixes
 
 ## Description
