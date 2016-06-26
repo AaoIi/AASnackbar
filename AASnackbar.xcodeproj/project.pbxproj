@@ -157,7 +157,6 @@
 				TargetAttributes = {
 					CE64AE6A1C0B0D2400736B6C = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 7252D2F2ZF;
 					};
 					CE64AE7E1C0B0D2400736B6C = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -339,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AASnackbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AASnackbar;
@@ -350,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AASnackbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AASnackbar;
@@ -400,6 +401,7 @@
 				CE64AE8A1C0B0D2400736B6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE64AE8B1C0B0D2400736B6C /* Build configuration list for PBXNativeTarget "AASnackbarTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +410,7 @@
 				CE64AE8D1C0B0D2400736B6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

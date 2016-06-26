@@ -60,7 +60,7 @@ class AASnackbar: UIView {
             button = UIButton(frame: CGRect(x: self.frame.size.width-87, y: 8, width: 86, height: 50))
             button.setTitle(buttonTitle, forState: UIControlState.Normal)
             button.setTitleColor(UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1.0), forState: UIControlState.Normal)
-            button.addTarget(self, action: "invalidateTimer:", forControlEvents: UIControlEvents.TouchUpInside)
+            button.addTarget(self, action: #selector(AASnackbar.invalidateTimer(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             self.addSubview(button)
             
         }
@@ -74,7 +74,7 @@ class AASnackbar: UIView {
 
                 }) { (finished) -> Void in
                     
-                    self.timer =  NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: "invalidateTimer:", userInfo: nil, repeats: false)
+                    self.timer =  NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: #selector(AASnackbar.invalidateTimer(_:)), userInfo: nil, repeats: false)
             }
         }else {
             // Set and animate fade animation
@@ -85,7 +85,7 @@ class AASnackbar: UIView {
                 
                 }) { (finished) -> Void in
                     
-                    self.timer =  NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: "invalidateTimer:", userInfo: nil, repeats: false)
+                    self.timer =  NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: #selector(AASnackbar.invalidateTimer(_:)), userInfo: nil, repeats: false)
             }
             
         }

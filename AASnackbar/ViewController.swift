@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .Translation)
         snackBar.setButtonTextColor(UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1.0))
-        snackBar.addButtonAction("showAlert:", view: self)
+        snackBar.addButtonAction(#selector(ViewController.showAlert(_:)), view: self)
         self.view.addSubview(snackBar)
         
     }
