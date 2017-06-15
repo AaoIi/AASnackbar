@@ -1,20 +1,20 @@
 # AASnackbar
 
-##Latest Update
+## Latest Update
 
-####1.2 Release (6/15/2017)
+#### 1.2 Release (6/15/2017)
 
-*Support Swift 3.0
+* Support Swift 3.0
 
-####1.2 Release (7/26/2016)
+#### 1.2 Release (7/26/2016)
 
-*Warning fixes.<br/>
-*Support Swift 2.2
+* Warning fixes.<br/>
+* Support Swift 2.2
 
-####1.1 Release (12/31/2015)
+#### 1.1 Release (12/31/2015)
 
-*Major changes and much easier to use.<br/>
-*Bug fixes
+* Major changes and much easier to use.<br/>
+* Bug fixes
 
 ## Description
 AASnackbar shows a short animated message at the bottom of the screen about Specific event with duration.
@@ -27,27 +27,33 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
 ##### 2) Create object from AASnackbar ```var snackBar : AASnackbar!``` <br/>
 ##### 3) Show AASnackbar:<br/><br/>     
 
-##### 3.1) Without action:<br/>
+##### 3.1) Without action:
+
 ```swift
         // send the current view frame and set the text with duration, and animation type fade or translation.
         snackBar = AASnackbar(frame: self.view.frame, title: "No internet connection", duration: 3.0,animationType:.Fade)
         self.view.addSubview(snackBar)
-        ```
-##### 3.2) With action:<br/> 
+        
+```
+##### 3.2) With action:
 ```swift
+
        // send the current view frame and set the text with duration,by setting button title makes button visable
         snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .Translation)
         snackBar.addButtonAction("showAlert:", view: self)
         self.view.addSubview(snackBar)
-        ```
-##### 4) Hide AASnackbar (optional):<br/> 
+        
+```
+
+##### 4) Hide AASnackbar (optional):
+
 ```swift
         // By default snackbar has duration to show and hide itself,this can be used to force hiding snackbar while its currently showing. so if you are showing the snackbar with fade then use fade to hide and same for translation.
         snackBar.hideWithFade(1.0, delay: 0.0)
         snackBar.hideWithTranslation(1.0, delay: 0.0)
 ```
 
-##Customization ##
+## Customization ##
 This is all the properties in AASnackbar the you will be able to customize from your base view controller.
 
 #### 1) Background Color<br/>
