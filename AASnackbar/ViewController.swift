@@ -26,19 +26,19 @@ class ViewController: UIViewController {
     
     // Show Snackbar without action by only setting the button to be hidden.
     
-    @IBAction func showSnackbar(sender: AnyObject) {
+    @IBAction func showSnackbar(_ sender: AnyObject) {
         
-        snackBar = AASnackbar(frame: self.view.frame, title: "No internet connection", duration: 3.0,animationType:.Fade)
-        snackBar.setTextColor(UIColor.whiteColor())
+        snackBar = AASnackbar(frame: self.view.frame, title: "No internet connection", duration: 3.0,animationType:.fade)
+        snackBar.setTextColor(UIColor.white)
         self.view.addSubview(snackBar)
 
     }
     
     // Show Snackbar with action .
     
-    @IBAction func showSnackbarWithAction(sender: AnyObject) {
+    @IBAction func showSnackbarWithAction(_ sender: AnyObject) {
         
-        snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .Translation)
+        snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .translation)
         snackBar.setButtonTextColor(UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1.0))
         snackBar.addButtonAction(#selector(ViewController.showAlert(_:)), view: self)
         self.view.addSubview(snackBar)
@@ -47,19 +47,19 @@ class ViewController: UIViewController {
     
     // Action for the button
 
-    func showAlert(sender:AnyObject){
+    func showAlert(_ sender:AnyObject){
         
-        let alert = UIAlertController(title: "Do any action!", message: "", preferredStyle: UIAlertControllerStyle.Alert)
-        let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil)
+        let alert = UIAlertController(title: "Do any action!", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
         alert.addAction(okButton)
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
     }
 
 
     // Hide SnackBar
 
-    @IBAction func hideSnackbar(sender: AnyObject) {
+    @IBAction func hideSnackbar(_ sender: AnyObject) {
         
         snackBar.hideWithFade(0.5, delay: 0.0)
         

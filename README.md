@@ -20,84 +20,51 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
 
 ## How to use AASnackbar ##
 ##### 1) import ```AASnackbar.swift``` into your project <br/>
-#####2) Create object from AASnackbar ```var snackBar : AASnackbar!``` <br/>
-#####3) Show AASnackbar:<br/><br/>     3.1) Without action:<br/>
+##### 2) Create object from AASnackbar ```var snackBar : AASnackbar!``` <br/>
+##### 3) Show AASnackbar:<br/><br/>     
 
-<<<<<<< HEAD
-// send the current view frame and set the text with duration, and animation type fade or translation.
-snackBar = AASnackbar(frame: self.view.frame, title: "No internet connection", duration: 3.0,animationType:.Fade)
-self.view.addSubview(snackBar)
-
-##### 3.2) With action:<br/> 
-
-// send the current view frame and set the text with duration,by setting button title makes button visable
-snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .Translation)
-snackBar.addButtonAction("showAlert:", view: self)
-self.view.addSubview(snackBar)
-
-##### 4) Hide AASnackbar (optional):<br/> 
-
-// By default snackbar has duration to show and hide itself,this can be used to force hiding snackbar while its currently showing. so if you are showing the snackbar with fade then use fade to hide and same for translation.
-snackBar.hideWithFade(1.0, delay: 0.0)
-snackBar.hideWithTranslation(1.0, delay: 0.0)
-
-=======
+##### 3.1) Without action:<br/>
+```swift
         // send the current view frame and set the text with duration, and animation type fade or translation.
         snackBar = AASnackbar(frame: self.view.frame, title: "No internet connection", duration: 3.0,animationType:.Fade)
         self.view.addSubview(snackBar)
-        
+        ```
 ##### 3.2) With action:<br/> 
-
+```swift
        // send the current view frame and set the text with duration,by setting button title makes button visable
         snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .Translation)
         snackBar.addButtonAction("showAlert:", view: self)
         self.view.addSubview(snackBar)
-        
+        ```
 ##### 4) Hide AASnackbar (optional):<br/> 
-
+```swift
         // By default snackbar has duration to show and hide itself,this can be used to force hiding snackbar while its currently showing. so if you are showing the snackbar with fade then use fade to hide and same for translation.
         snackBar.hideWithFade(1.0, delay: 0.0)
         snackBar.hideWithTranslation(1.0, delay: 0.0)
-
->>>>>>> origin/master
+```
 
 ##Customization ##
 This is all the properties in AASnackbar the you will be able to customize from your base view controller.
 
 #### 1) Background Color<br/>
-<<<<<<< HEAD
-
+```swift
 backgroundColor = UIColor
-
+```
 #### 2) Text Color<br/>
+```swift
 setTextColor(UIColor)
-
+```
 #### 3) Button Text Color and Action<br/>
+```swift
 setButtonTextColor(UIColor)
 addButtonAction(selector, view: UIViewController)
-
+```
 #### 4) Force hiding<br/>
+```swift
 hideWithFade(duration: NSTimeInterval, delay: NSTimeInterval)
 hideWithTranslation(duration: NSTimeInterval, delay: NSTimeInterval)
+```
 
-
-=======
-
-        backgroundColor = UIColor
-        
-#### 2) Text Color<br/>
-        setTextColor(UIColor)
-        
-#### 3) Button Text Color and Action<br/>
-        setButtonTextColor(UIColor)
-        addButtonAction(selector, view: UIViewController)
-
-#### 4) Force hiding<br/>
-        hideWithFade(duration: NSTimeInterval, delay: NSTimeInterval)
-        hideWithTranslation(duration: NSTimeInterval, delay: NSTimeInterval)
-        
-
->>>>>>> origin/master
 ## Requierments ##
 * Swift 2.2+
 * IOS 7.0+
