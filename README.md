@@ -2,6 +2,10 @@
 
 ##Latest Update
 
+####1.2 Release (6/15/2017)
+
+*Support Swift 3.0
+
 ####1.2 Release (7/26/2016)
 
 *Warning fixes.<br/>
