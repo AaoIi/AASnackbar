@@ -1,20 +1,20 @@
 # AASnackbar
 
-##Latest Update
+## Latest Update
 
-####1.2 Release (6/15/2017)
+#### 1.2 Release (6/15/2017)
 
-*Support Swift 3.0
+* Support Swift 3.0
 
-####1.2 Release (7/26/2016)
+#### 1.2 Release (7/26/2016)
 
-*Warning fixes.<br/>
-*Support Swift 2.2
+* Warning fixes.<br/>
+* Support Swift 2.2
 
-####1.1 Release (12/31/2015)
+#### 1.1 Release (12/31/2015)
 
-*Major changes and much easier to use.<br/>
-*Bug fixes
+* Major changes and much easier to use.<br/>
+* Bug fixes
 
 ## Description
 AASnackbar shows a short animated message at the bottom of the screen about Specific event with duration.
