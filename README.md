@@ -2,6 +2,11 @@
 
 ## Latest Update
 
+#### 1.2.1 Release (6/17/2019)
+
+* Support Swift 5.0
+* Minor improvements.
+
 #### 1.2 Release (6/15/2017)
 
 * Support Swift 3.0
