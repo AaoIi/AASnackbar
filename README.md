@@ -80,8 +80,13 @@ hideWithFade(duration: NSTimeInterval, delay: NSTimeInterval)
 hideWithTranslation(duration: NSTimeInterval, delay: NSTimeInterval)
 ```
 
+#### 5) Bar Height<br/>
+```swift
+barHeight = 60
+```
+
 ## Requierments ##
-* Swift 2.2+
+* Swift 5.0+
 * IOS 7.0+
 
 ## License ##
