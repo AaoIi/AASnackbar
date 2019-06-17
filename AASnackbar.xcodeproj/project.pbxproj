@@ -12,7 +12,6 @@
 		CE64AE741C0B0D2400736B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64AE721C0B0D2400736B6C /* Main.storyboard */; };
 		CE64AE761C0B0D2400736B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE64AE751C0B0D2400736B6C /* Assets.xcassets */; };
 		CE64AE791C0B0D2400736B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64AE771C0B0D2400736B6C /* LaunchScreen.storyboard */; };
-		CE64AE841C0B0D2400736B6C /* AASnackbarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64AE831C0B0D2400736B6C /* AASnackbarTests.swift */; };
 		CE64AE8F1C0B0D8400736B6C /* AASnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64AE8E1C0B0D8400736B6C /* AASnackbar.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,6 @@
 		CE64AE781C0B0D2400736B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE64AE7A1C0B0D2400736B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64AE7F1C0B0D2400736B6C /* AASnackbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AASnackbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE64AE831C0B0D2400736B6C /* AASnackbarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AASnackbarTests.swift; sourceTree = "<group>"; };
-		CE64AE851C0B0D2400736B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64AE8E1C0B0D8400736B6C /* AASnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AASnackbar.swift; path = Classes/AASnackbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				CE64AE6D1C0B0D2400736B6C /* AASnackbar */,
-				CE64AE821C0B0D2400736B6C /* AASnackbarTests */,
 				CE64AE6C1C0B0D2400736B6C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,15 +84,6 @@
 				CE64AE7A1C0B0D2400736B6C /* Info.plist */,
 			);
 			path = AASnackbar;
-			sourceTree = "<group>";
-		};
-		CE64AE821C0B0D2400736B6C /* AASnackbarTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE64AE831C0B0D2400736B6C /* AASnackbarTests.swift */,
-				CE64AE851C0B0D2400736B6C /* Info.plist */,
-			);
-			path = AASnackbarTests;
 			sourceTree = "<group>";
 		};
 		CE64AE901C0B0D8800736B6C /* Classes */ = {
@@ -223,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE64AE841C0B0D2400736B6C /* AASnackbarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
