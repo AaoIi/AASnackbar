@@ -20,6 +20,9 @@ class AASnackbar: UIView {
         case fade = 0 , translation = 1
     }
     
+    //MARK:- Customization
+    static var barHeight : CGFloat = 60
+    
     // MARK: Constructors init
     
     init(frame: CGRect,title:String,buttonTitle:String,duration:TimeInterval,animationType:Type) {
@@ -43,7 +46,7 @@ class AASnackbar: UIView {
     fileprivate func showAASnackBar(_ textTitle:String,withButton:Bool,buttonTitle:String,duration:TimeInterval,animationType:Type){
 
         
-        self.frame = CGRect(x: 0 , y: self.frame.size.height-66, width: self.frame.size.width, height: 66)
+        self.frame = CGRect(x: 0 , y: self.frame.size.height-66, width: self.frame.size.width, height: AASnackbar.barHeight)
         self.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 1.0)
         
         // Create label
@@ -58,9 +61,9 @@ class AASnackbar: UIView {
         if withButton == true {
             
             button = UIButton(frame: CGRect(x: self.frame.size.width-87, y: 8, width: 86, height: 50))
-            button.setTitle(buttonTitle, for: UIControlState())
-            button.setTitleColor(UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1.0), for: UIControlState())
-            button.addTarget(self, action: #selector(AASnackbar.invalidateTimer(_:)), for: UIControlEvents.touchUpInside)
+            button.setTitle(buttonTitle, for: .normal)
+            button.setTitleColor(UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1.0), for: .normal)
+            button.addTarget(self, action: #selector(AASnackbar.invalidateTimer(_:)), for: .touchUpInside)
             self.addSubview(button)
             
         }
@@ -113,19 +116,19 @@ class AASnackbar: UIView {
     }
     
     func setButtonTextColor(_ color:UIColor){
-        self.button.setTitleColor(color, for: UIControlState())
+        self.button.setTitleColor(color, for: .normal)
     }
     
     func addButtonAction(_ selector:Selector,view:UIViewController){
         
-        self.button.addTarget(view, action: selector, for: UIControlEvents.touchUpInside)
+        self.button.addTarget(view, action: selector, for: .touchUpInside)
         
     }
     
     
     // MARK: Hide Actions
     
-    func hideWithTranslation(_ duration:TimeInterval,delay:TimeInterval){
+    func hideWithTranslation(_ duration:TimeInterval = 1,delay:TimeInterval = 0){
         
         UIView.animate(withDuration: duration
             , delay: delay, options: [], animations: { () -> Void in
@@ -137,7 +140,7 @@ class AASnackbar: UIView {
         }
     }
     
-    func hideWithFade(_ duration:TimeInterval,delay:TimeInterval){
+    func hideWithFade(_ duration:TimeInterval = 1,delay:TimeInterval = 0){
         
         UIView.animate(withDuration: duration
             , delay: delay, options: [], animations: { () -> Void in

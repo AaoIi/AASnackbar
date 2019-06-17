@@ -47,10 +47,10 @@ class ViewController: UIViewController {
     
     // Action for the button
 
-    func showAlert(_ sender:AnyObject){
+    @objc func showAlert(_ sender:AnyObject){
         
-        let alert = UIAlertController(title: "Do any action!", message: "", preferredStyle: UIAlertControllerStyle.alert)
-        let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        let alert = UIAlertController(title: "Do any action!", message: "", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
         
