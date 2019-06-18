@@ -19,7 +19,8 @@ class AASnackbar: UIView {
         }
     }
     @IBOutlet private var contentView:UIView!
-    
+    @IBOutlet private weak var parentView:UIView!
+
     fileprivate var timer : Timer!
     fileprivate var animationType : Type!
     enum `Type`:Int{
@@ -31,16 +32,18 @@ class AASnackbar: UIView {
     
     // MARK: Constructors init
     
-    init(frame: CGRect,title:String,buttonTitle:String,duration:TimeInterval,animationType:Type) {
-        super.init(frame: frame)
+    init(addedToView: UIView,title:String,buttonTitle:String,duration:TimeInterval,animationType:Type) {
+        super.init(frame: addedToView.frame)
         commonInit()
+        self.parentView = addedToView
         self.animationType = animationType
         self.showAASnackBar(title,withButton: true,buttonTitle: buttonTitle,duration: duration,animationType:animationType)
     }
     
-    init(frame: CGRect,title:String,duration:TimeInterval,animationType:Type) {
-        super.init(frame: frame)
+    init(addedToView: UIView,title:String,duration:TimeInterval,animationType:Type) {
+        super.init(frame: addedToView.frame)
         commonInit()
+        self.parentView = addedToView
         self.animationType = animationType
         self.showAASnackBar(title,withButton: false,buttonTitle: "",duration: duration,animationType:animationType)
     }
@@ -115,6 +118,10 @@ class AASnackbar: UIView {
         
     }
     
+    func show(){
+        parentView.addSubview(self)
+    }
+    
     @objc fileprivate func invalidateTimer(_ sender:AnyObject){
         
         if let timer = sender as? Timer {
@@ -156,6 +163,7 @@ class AASnackbar: UIView {
                 
         }) { (finished) -> Void in
             self.removeFromSuperview()
+            self.parentView = nil
         }
     }
     
@@ -168,6 +176,7 @@ class AASnackbar: UIView {
                 
         }) { (finished) -> Void in
             self.removeFromSuperview()
+            self.parentView = nil
         }
     }
     

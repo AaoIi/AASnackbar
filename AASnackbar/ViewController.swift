@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     var snackBar : AASnackbar!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +27,9 @@ class ViewController: UIViewController {
     
     @IBAction func showSnackbar(_ sender: AnyObject) {
         
-        snackBar = AASnackbar(frame: self.view.frame, title: "No internet connection", duration: 3.0,animationType:.fade)
+        snackBar = AASnackbar(addedToView: self.view, title: "No internet connection", duration: 3.0,animationType:.fade)
         snackBar.setTextColor(UIColor.white)
-        self.view.addSubview(snackBar)
+        snackBar.show()
 
     }
     
@@ -38,10 +37,10 @@ class ViewController: UIViewController {
     
     @IBAction func showSnackbarWithAction(_ sender: AnyObject) {
         
-        snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .translation)
+        snackBar = AASnackbar(addedToView: self.view, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .translation)
         snackBar.setButtonTextColor(UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1.0))
         snackBar.addButtonAction(#selector(ViewController.showAlert(_:)), view: self)
-        self.view.addSubview(snackBar)
+        snackBar.show()
         
     }
     

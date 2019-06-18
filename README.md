@@ -30,7 +30,7 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
 <img src="https://lh3.googleusercontent.com/qf4BcHD1IgXcQ-NQw4Vx4PwMsyxvgdaGyzgmYZKTKZO7i1V2LHmEUw=w373-h642-p-b1-c0x00999999">
 
 ## How to use AASnackbar ##
-##### 1) import ```AASnackbar.swift``` into your project <br/>
+##### 1) import ```Classes Folder``` into your project <br/>
 ##### 2) Create object from AASnackbar ```var snackBar : AASnackbar!``` <br/>
 ##### 3) Show AASnackbar:<br/><br/>     
 
@@ -38,17 +38,27 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
 
 ```swift
         // send the current view frame and set the text with duration, and animation type fade or translation.
-        snackBar = AASnackbar(frame: self.view.frame, title: "No internet connection", duration: 3.0,animationType:.Fade)
-        self.view.addSubview(snackBar)
+snackBar = AASnackbar(addedToView: self.view, title: "No internet connection", duration: 3.0,animationType:.fade)
+snackBar.setTextColor(UIColor.white)
+snackBar.show()
         
 ```
 ##### 3.2) With action:
 ```swift
 
-       // send the current view frame and set the text with duration,by setting button title makes button visable
-        snackBar = AASnackbar(frame: self.view.frame, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .Translation)
-        snackBar.addButtonAction("showAlert:", view: self)
-        self.view.addSubview(snackBar)
+       // send the current view frame and set the text with duration, by setting button title makes button visible
+snackBar = AASnackbar(addedToView: self.view, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .translation)
+snackBar.setButtonTextColor(UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1.0))
+snackBar.addButtonAction(#selector(ViewController.showAlert(_:)), view: self)
+snackBar.show()
+        
+```
+
+##### 3.3) Shortcut show:
+```swift
+
+       // 
+AASnackbar(addedToView: self.view, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .translation).show()
         
 ```
 
@@ -87,7 +97,7 @@ hideWithTranslation(duration: NSTimeInterval, delay: NSTimeInterval)
 barHeight = 60
 ```
 
-## Requierments ##
+## Requirements ##
 * Swift 5.0+
 * IOS 7.0+
 
