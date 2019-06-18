@@ -12,8 +12,8 @@
 		CE64AE741C0B0D2400736B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64AE721C0B0D2400736B6C /* Main.storyboard */; };
 		CE64AE761C0B0D2400736B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE64AE751C0B0D2400736B6C /* Assets.xcassets */; };
 		CE64AE791C0B0D2400736B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64AE771C0B0D2400736B6C /* LaunchScreen.storyboard */; };
-		CE64AE8F1C0B0D8400736B6C /* AASnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64AE8E1C0B0D8400736B6C /* AASnackbar.swift */; };
-		EF8181BA22B7CC3800802DA6 /* AASnackbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8181B922B7CC3800802DA6 /* AASnackbar.xib */; };
+		EF77072722B8CCAD0008E0DB /* AASnackbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF77072522B8CCAD0008E0DB /* AASnackbar.xib */; };
+		EF77072822B8CCAD0008E0DB /* AASnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77072622B8CCAD0008E0DB /* AASnackbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,8 @@
 		CE64AE781C0B0D2400736B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE64AE7A1C0B0D2400736B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64AE7F1C0B0D2400736B6C /* AASnackbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AASnackbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE64AE8E1C0B0D8400736B6C /* AASnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AASnackbar.swift; path = Classes/AASnackbar.swift; sourceTree = "<group>"; };
-		EF8181B922B7CC3800802DA6 /* AASnackbar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AASnackbar.xib; path = Classes/AASnackbar.xib; sourceTree = "<group>"; };
+		EF77072522B8CCAD0008E0DB /* AASnackbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AASnackbar.xib; sourceTree = "<group>"; };
+		EF77072622B8CCAD0008E0DB /* AASnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASnackbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 		CE64AE6D1C0B0D2400736B6C /* AASnackbar */ = {
 			isa = PBXGroup;
 			children = (
-				CE64AE901C0B0D8800736B6C /* Classes */,
+				EF77072422B8CCAD0008E0DB /* Classes */,
 				CE64AE6E1C0B0D2400736B6C /* AppDelegate.swift */,
 				CE64AE701C0B0D2400736B6C /* ViewController.swift */,
 				CE64AE721C0B0D2400736B6C /* Main.storyboard */,
@@ -88,14 +88,14 @@
 			path = AASnackbar;
 			sourceTree = "<group>";
 		};
-		CE64AE901C0B0D8800736B6C /* Classes */ = {
+		EF77072422B8CCAD0008E0DB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CE64AE8E1C0B0D8400736B6C /* AASnackbar.swift */,
-				EF8181B922B7CC3800802DA6 /* AASnackbar.xib */,
+				EF77072522B8CCAD0008E0DB /* AASnackbar.xib */,
+				EF77072622B8CCAD0008E0DB /* AASnackbar.swift */,
 			);
-			name = Classes;
-			sourceTree = "<group>";
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -185,7 +185,7 @@
 			files = (
 				CE64AE791C0B0D2400736B6C /* LaunchScreen.storyboard in Resources */,
 				CE64AE761C0B0D2400736B6C /* Assets.xcassets in Resources */,
-				EF8181BA22B7CC3800802DA6 /* AASnackbar.xib in Resources */,
+				EF77072722B8CCAD0008E0DB /* AASnackbar.xib in Resources */,
 				CE64AE741C0B0D2400736B6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE64AE8F1C0B0D8400736B6C /* AASnackbar.swift in Sources */,
+				EF77072822B8CCAD0008E0DB /* AASnackbar.swift in Sources */,
 				CE64AE711C0B0D2400736B6C /* ViewController.swift in Sources */,
 				CE64AE6F1C0B0D2400736B6C /* AppDelegate.swift in Sources */,
 			);
