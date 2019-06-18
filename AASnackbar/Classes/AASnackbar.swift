@@ -8,8 +8,7 @@
 
 import UIKit
 
-
-class AASnackbar: UIView {
+public class AASnackbar: UIView {
     
     // MARK: private properties
     @IBOutlet fileprivate weak var label: UILabel!
@@ -28,7 +27,7 @@ class AASnackbar: UIView {
     }
     
     //MARK:- Customization
-    static var barHeight : CGFloat = 100
+    public static var barHeight : CGFloat = 100
     
     // MARK: Constructors init
     
@@ -118,7 +117,7 @@ class AASnackbar: UIView {
         
     }
     
-    func show(){
+    public func show(){
         parentView.addSubview(self)
     }
     
@@ -137,15 +136,15 @@ class AASnackbar: UIView {
     
     // MARK: Property setters
     
-    func setTextColor(_ color:UIColor){
+    public func setTextColor(_ color:UIColor){
         self.label.textColor = color
     }
     
-    func setButtonTextColor(_ color:UIColor){
+    public func setButtonTextColor(_ color:UIColor){
         self.button.setTitleColor(color, for: .normal)
     }
     
-    func addButtonAction(_ selector:Selector,view:UIViewController){
+    public func addButtonAction(_ selector:Selector,view:UIViewController){
         
         self.button.addTarget(view, action: selector, for: .touchUpInside)
         
@@ -154,7 +153,7 @@ class AASnackbar: UIView {
     
     // MARK: Hide Actions
     
-    func hideWithTranslation(_ duration:TimeInterval = 1,delay:TimeInterval = 0){
+    public func hideWithTranslation(_ duration:TimeInterval = 1,delay:TimeInterval = 0){
         
         UIView.animate(withDuration: duration
             , delay: delay, options: [], animations: { () -> Void in
@@ -167,7 +166,7 @@ class AASnackbar: UIView {
         }
     }
     
-    func hideWithFade(_ duration:TimeInterval = 1,delay:TimeInterval = 0){
+    public func hideWithFade(_ duration:TimeInterval = 1,delay:TimeInterval = 0){
         
         UIView.animate(withDuration: duration
             , delay: delay, options: [], animations: { () -> Void in
