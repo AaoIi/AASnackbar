@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available (iOS 9,*)
 public class AASnackbar: UIView {
     
     // MARK: private properties
