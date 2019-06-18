@@ -13,6 +13,7 @@
 		CE64AE761C0B0D2400736B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE64AE751C0B0D2400736B6C /* Assets.xcassets */; };
 		CE64AE791C0B0D2400736B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64AE771C0B0D2400736B6C /* LaunchScreen.storyboard */; };
 		CE64AE8F1C0B0D8400736B6C /* AASnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64AE8E1C0B0D8400736B6C /* AASnackbar.swift */; };
+		EF8181BA22B7CC3800802DA6 /* AASnackbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF8181B922B7CC3800802DA6 /* AASnackbar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		CE64AE7A1C0B0D2400736B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64AE7F1C0B0D2400736B6C /* AASnackbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AASnackbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE64AE8E1C0B0D8400736B6C /* AASnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AASnackbar.swift; path = Classes/AASnackbar.swift; sourceTree = "<group>"; };
+		EF8181B922B7CC3800802DA6 /* AASnackbar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AASnackbar.xib; path = Classes/AASnackbar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				CE64AE8E1C0B0D8400736B6C /* AASnackbar.swift */,
+				EF8181B922B7CC3800802DA6 /* AASnackbar.xib */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				CE64AE791C0B0D2400736B6C /* LaunchScreen.storyboard in Resources */,
 				CE64AE761C0B0D2400736B6C /* Assets.xcassets in Resources */,
+				EF8181BA22B7CC3800802DA6 /* AASnackbar.xib in Resources */,
 				CE64AE741C0B0D2400736B6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
