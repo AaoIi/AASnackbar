@@ -16,16 +16,6 @@
 		EF77072822B8CCAD0008E0DB /* AASnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77072622B8CCAD0008E0DB /* AASnackbar.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CE64AE801C0B0D2400736B6C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE64AE631C0B0D2400736B6C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE64AE6A1C0B0D2400736B6C;
-			remoteInfo = AASnackbar;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		CE64AE6B1C0B0D2400736B6C /* AASnackbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AASnackbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE64AE6E1C0B0D2400736B6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,20 +24,12 @@
 		CE64AE751C0B0D2400736B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE64AE781C0B0D2400736B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE64AE7A1C0B0D2400736B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE64AE7F1C0B0D2400736B6C /* AASnackbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AASnackbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF77072522B8CCAD0008E0DB /* AASnackbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AASnackbar.xib; sourceTree = "<group>"; };
 		EF77072622B8CCAD0008E0DB /* AASnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASnackbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE64AE681C0B0D2400736B6C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE64AE7C1C0B0D2400736B6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				CE64AE6B1C0B0D2400736B6C /* AASnackbar.app */,
-				CE64AE7F1C0B0D2400736B6C /* AASnackbarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,24 +98,6 @@
 			productReference = CE64AE6B1C0B0D2400736B6C /* AASnackbar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE64AE7E1C0B0D2400736B6C /* AASnackbarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE64AE8B1C0B0D2400736B6C /* Build configuration list for PBXNativeTarget "AASnackbarTests" */;
-			buildPhases = (
-				CE64AE7B1C0B0D2400736B6C /* Sources */,
-				CE64AE7C1C0B0D2400736B6C /* Frameworks */,
-				CE64AE7D1C0B0D2400736B6C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE64AE811C0B0D2400736B6C /* PBXTargetDependency */,
-			);
-			name = AASnackbarTests;
-			productName = AASnackbarTests;
-			productReference = CE64AE7F1C0B0D2400736B6C /* AASnackbarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,12 +112,6 @@
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = Z27X2MWLK6;
 						LastSwiftMigration = 0830;
-					};
-					CE64AE7E1C0B0D2400736B6C = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = Z27X2MWLK6;
-						LastSwiftMigration = 0830;
-						TestTargetID = CE64AE6A1C0B0D2400736B6C;
 					};
 				};
 			};
@@ -173,7 +130,6 @@
 			projectRoot = "";
 			targets = (
 				CE64AE6A1C0B0D2400736B6C /* AASnackbar */,
-				CE64AE7E1C0B0D2400736B6C /* AASnackbarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -190,13 +146,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE64AE7D1C0B0D2400736B6C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -210,22 +159,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE64AE7B1C0B0D2400736B6C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CE64AE811C0B0D2400736B6C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE64AE6A1C0B0D2400736B6C /* AASnackbar */;
-			targetProxy = CE64AE801C0B0D2400736B6C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE64AE721C0B0D2400736B6C /* Main.storyboard */ = {
@@ -358,6 +292,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z27X2MWLK6;
 				INFOPLIST_FILE = AASnackbar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AASnackbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,38 +307,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z27X2MWLK6;
 				INFOPLIST_FILE = AASnackbar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AASnackbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		CE64AE8C1C0B0D2400736B6C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = Z27X2MWLK6;
-				INFOPLIST_FILE = AASnackbarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AASnackbarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AASnackbar.app/AASnackbar";
-			};
-			name = Debug;
-		};
-		CE64AE8D1C0B0D2400736B6C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = Z27X2MWLK6;
-				INFOPLIST_FILE = AASnackbarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.AASnackbarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AASnackbar.app/AASnackbar";
 			};
 			name = Release;
 		};
@@ -424,15 +332,6 @@
 			buildConfigurations = (
 				CE64AE891C0B0D2400736B6C /* Debug */,
 				CE64AE8A1C0B0D2400736B6C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE64AE8B1C0B0D2400736B6C /* Build configuration list for PBXNativeTarget "AASnackbarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE64AE8C1C0B0D2400736B6C /* Debug */,
-				CE64AE8D1C0B0D2400736B6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
