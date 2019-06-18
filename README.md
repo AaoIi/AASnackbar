@@ -37,7 +37,7 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
 ##### 3.1) Without action:
 
 ```swift
-        // send the current view frame and set the text with duration, and animation type fade or translation.
+// send the current view frame and set the text with duration, and animation type fade or translation.
 snackBar = AASnackbar(addedToView: self.view, title: "No internet connection", duration: 3.0,animationType:.fade)
 snackBar.setTextColor(UIColor.white)
 snackBar.show()
@@ -46,7 +46,7 @@ snackBar.show()
 ##### 3.2) With action:
 ```swift
 
-       // send the current view frame and set the text with duration, by setting button title makes button visible
+// send the current view frame and set the text with duration, by setting button title makes button visible
 snackBar = AASnackbar(addedToView: self.view, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .translation)
 snackBar.setButtonTextColor(UIColor(red: 76/255, green: 175/255, blue: 80/255, alpha: 1.0))
 snackBar.addButtonAction(#selector(ViewController.showAlert(_:)), view: self)
@@ -57,7 +57,7 @@ snackBar.show()
 ##### 3.3) Shortcut show:
 ```swift
 
-       // 
+
 AASnackbar(addedToView: self.view, title: "No Internet connection",buttonTitle: "OK", duration: 3.0,animationType: .translation).show()
         
 ```
@@ -65,9 +65,9 @@ AASnackbar(addedToView: self.view, title: "No Internet connection",buttonTitle: 
 ##### 4) Hide AASnackbar (optional):
 
 ```swift
-        // By default snackbar has duration to show and hide itself,this can be used to force hiding snackbar while its currently showing. so if you are showing the snackbar with fade then use fade to hide and same for translation.
-        snackBar.hideWithFade(1.0, delay: 0.0)
-        snackBar.hideWithTranslation(1.0, delay: 0.0)
+// By default snackbar has duration to show and hide itself,this can be used to force hiding snackbar while its currently showing. so if you are showing the snackbar with fade then use fade to hide and same for translation.
+snackBar.hideWithFade(1.0, delay: 0.0)
+snackBar.hideWithTranslation(1.0, delay: 0.0)
 ```
 
 ## Customization ##
