@@ -32,7 +32,7 @@ public class AASnackbar: UIView {
     
     // MARK: Constructors init
     
-    init(addedToView: UIView,title:String,buttonTitle:String,duration:TimeInterval,animationType:Type) {
+    public init(addedToView: UIView,title:String,buttonTitle:String,duration:TimeInterval,animationType:Type) {
         super.init(frame: addedToView.frame)
         commonInit()
         self.parentView = addedToView
@@ -40,7 +40,7 @@ public class AASnackbar: UIView {
         self.showAASnackBar(title,withButton: true,buttonTitle: buttonTitle,duration: duration,animationType:animationType)
     }
     
-    init(addedToView: UIView,title:String,duration:TimeInterval,animationType:Type) {
+    public init(addedToView: UIView,title:String,duration:TimeInterval,animationType:Type) {
         super.init(frame: addedToView.frame)
         commonInit()
         self.parentView = addedToView
