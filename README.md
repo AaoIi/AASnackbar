@@ -6,6 +6,8 @@
 
 * Support Swift 5.0
 * Minor improvements.
+* xib design instead of programmatically.
+* Safe area is now supported.
 
 #### 1.2 Release (6/15/2017)
 
