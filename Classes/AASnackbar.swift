@@ -21,8 +21,8 @@ public class AASnackbar: UIView {
     @IBOutlet private weak var parentView:UIView!
 
     fileprivate var timer : Timer!
-    fileprivate var animationType : Type!
-    enum `Type`:Int{
+    public var animationType : Type!
+    public enum `Type`:Int{
         case fade = 0 , translation = 1
     }
     
