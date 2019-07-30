@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/AaoIi/AASnackbar.git", :tag => "1.0.1" }
 
   spec.source_files  = 'AASnackbar/**/*.swift','AASnackbar/**/*.h'
-  spec.resource_bundles = {
+  spec.ios.resource_bundle = {
     'AASnackbar' => ['AASnackbar/**/*.xib']
   }
 

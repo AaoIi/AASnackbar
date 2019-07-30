@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BD86B237DF977A4A8515AE5C78B718E /* AASnackbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260B05898F1F99BBC982E057A5A56B88 /* AASnackbar.xib */; };
 		114CC2D38459C69C9946BC449609CF08 /* Pods-AASnackbarExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D784592AE1D55A1070B23DF8555BBE3 /* Pods-AASnackbarExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BA1903804954535B1E24CDF051ECA99 /* AASnackbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFDDA1BDB0D0E33E468E7CB50F520D2 /* AASnackbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C71FDF9276FEC0B87B5072BEBDA2845 /* AASnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9852CDE45E4E3385F5C5A6A0072A992 /* AASnackbar-dummy.m */; };
@@ -16,6 +15,7 @@
 		7C8A70D449C8B09D18B2908069C66AF5 /* AASnackbar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE370CD6F6983A576106836D3AC96454 /* AASnackbar.bundle */; };
 		7E3F950232451EFB311B189EC544DC3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		98136EEDE9CD08313F3AEE9B521AD71C /* AASnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = FF5BEA81F147054B4139A34BD7559598 /* AASnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFA15A7122F0799C004BB06C /* AASnackbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260B05898F1F99BBC982E057A5A56B88 /* AASnackbar.xib */; };
 		F01CFE30D80C69703A45DB5CF47120B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,19 +47,19 @@
 		5D784592AE1D55A1070B23DF8555BBE3 /* Pods-AASnackbarExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AASnackbarExample-umbrella.h"; sourceTree = "<group>"; };
 		6C6152703E776AA515E11662709D0C0D /* Pods-AASnackbarExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AASnackbarExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		6C721463D971DB8FDDD75611A461DC99 /* AASnackbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AASnackbar.modulemap; sourceTree = "<group>"; };
-		6E240A362002B9914D0BFC184A415C56 /* AASnackbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AASnackbar.framework; path = AASnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ED698ADD0D557F4AC80149BD256264F /* Pods_AASnackbarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AASnackbarExample.framework; path = "Pods-AASnackbarExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E240A362002B9914D0BFC184A415C56 /* AASnackbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AASnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED698ADD0D557F4AC80149BD256264F /* Pods_AASnackbarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AASnackbarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBEC57EC8CC2463386DFAC249957C49 /* Pods-AASnackbarExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AASnackbarExample-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7124E4817F73974CDA7FADB4D0AF5F6 /* Pods-AASnackbarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AASnackbarExample.debug.xcconfig"; sourceTree = "<group>"; };
-		AABCD08F4D81F2A72203CAC73EA18690 /* AASnackbar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AASnackbar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AABCD08F4D81F2A72203CAC73EA18690 /* AASnackbar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AASnackbar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAFDDA1BDB0D0E33E468E7CB50F520D2 /* AASnackbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AASnackbar-umbrella.h"; sourceTree = "<group>"; };
 		B5C30148E309EA747B617936A994F082 /* Pods-AASnackbarExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AASnackbarExample-Info.plist"; sourceTree = "<group>"; };
 		BABCAE0F949DC498AA8B6692AED5B1FE /* Pods-AASnackbarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AASnackbarExample.release.xcconfig"; sourceTree = "<group>"; };
 		C9852CDE45E4E3385F5C5A6A0072A992 /* AASnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AASnackbar-dummy.m"; sourceTree = "<group>"; };
 		D2719CBDD4DD179DFF5BD55EC6D58159 /* AASnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AASnackbar.xcconfig; sourceTree = "<group>"; };
 		E61FBFDDBFE1DA8FC2BE1BB210DF9E9C /* AASnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AASnackbar-prefix.pch"; sourceTree = "<group>"; };
-		EE370CD6F6983A576106836D3AC96454 /* AASnackbar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AASnackbar.bundle; path = "AASnackbar-AASnackbar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE370CD6F6983A576106836D3AC96454 /* AASnackbar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AASnackbar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EF37B865E0C3AB4273EC700120FE40 /* AASnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AASnackbar.swift; path = AASnackbar/AASnackbar.swift; sourceTree = "<group>"; };
 		FF5BEA81F147054B4139A34BD7559598 /* AASnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AASnackbar.h; path = AASnackbar/AASnackbar.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -331,7 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD86B237DF977A4A8515AE5C78B718E /* AASnackbar.xib in Resources */,
+				EFA15A7122F0799C004BB06C /* AASnackbar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

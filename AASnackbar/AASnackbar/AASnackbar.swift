@@ -53,11 +53,14 @@ public class AASnackbar: UIView {
     }
     
     private func commonInit() {
-        Bundle.main.loadNibNamed("AASnackbar", owner: self, options: nil)
+        
+        let bundle = Bundle(path: Bundle(for: AASnackbar.self).path(forResource: "AASnackbar", ofType: "bundle")!)
+        bundle?.loadNibNamed("AASnackbar", owner: self, options: nil)
         guard let content = contentView else { return }
         content.frame = self.bounds
         content.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         self.addSubview(content)
+        
     }
     
     // MARK: AASnackbar initialization
