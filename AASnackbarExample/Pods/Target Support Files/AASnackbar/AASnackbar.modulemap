@@ -1,0 +1,6 @@
+framework module AASnackbar {
+  umbrella header "AASnackbar-umbrella.h"
+
+  export *
+  module * { export * }
+}

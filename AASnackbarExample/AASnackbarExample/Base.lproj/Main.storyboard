@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nwA-qK-k9O">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AASnackbar-->
+        <scene sceneID="749-3E-7F2">
+            <objects>
+                <viewController id="JI4-jX-p1M" customClass="ViewController" customModule="AASnackbarExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xVj-M7-59Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="iA8-bk-P9Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rDp-Yb-llS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZ9-LU-9hm">
+                                <rect key="frame" x="122.5" y="285" width="169" height="30"/>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.57647058819999997" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="7kV-D3-Q6Q"/>
+                                </constraints>
+                                <state key="normal" title="Show AASnackbar">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSnackbar:" destination="JI4-jX-p1M" eventType="touchUpInside" id="x7S-t0-AxU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nau-g2-m4J">
+                                <rect key="frame" x="91" y="323" width="232" height="30"/>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.57647058819999997" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="wyW-6L-4qz"/>
+                                </constraints>
+                                <state key="normal" title="Show AASnackbar with action">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSnackbarWithAction:" destination="JI4-jX-p1M" eventType="touchUpInside" id="F71-LH-ECk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH4-dc-3Mq">
+                                <rect key="frame" x="122.5" y="361" width="169" height="30"/>
+                                <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hide AASnackbar">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideSnackbar:" destination="JI4-jX-p1M" eventType="touchUpInside" id="o4f-BU-Duz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fZ9-LU-9hm" firstAttribute="top" secondItem="fg7-xx-V5u" secondAttribute="top" constant="197" id="0kh-7z-fYL"/>
+                            <constraint firstItem="fH4-dc-3Mq" firstAttribute="centerX" secondItem="rDp-Yb-llS" secondAttribute="centerX" id="Dms-Zb-glu"/>
+                            <constraint firstItem="nau-g2-m4J" firstAttribute="centerX" secondItem="fZ9-LU-9hm" secondAttribute="centerX" id="Gut-Kf-89n"/>
+                            <constraint firstItem="fH4-dc-3Mq" firstAttribute="trailing" secondItem="fZ9-LU-9hm" secondAttribute="trailing" id="MSf-yO-Uqr"/>
+                            <constraint firstItem="nau-g2-m4J" firstAttribute="top" secondItem="fZ9-LU-9hm" secondAttribute="bottom" constant="8" symbolic="YES" id="RFt-N4-7ic"/>
+                            <constraint firstItem="fH4-dc-3Mq" firstAttribute="top" secondItem="fZ9-LU-9hm" secondAttribute="bottom" constant="46" id="o8e-Uh-yhb"/>
+                            <constraint firstItem="fH4-dc-3Mq" firstAttribute="leading" secondItem="fZ9-LU-9hm" secondAttribute="leading" id="x9F-8S-RYF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fg7-xx-V5u"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AASnackbar" id="S3c-QU-OLH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azP-Zz-qju" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BXx-6M-85J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nwA-qK-k9O" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="OtI-ur-0Zc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JI4-jX-p1M" kind="relationship" relationship="rootViewController" id="Vxc-sH-Omo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbw-ML-5So" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="278"/>
+        </scene>
+    </scenes>
+</document>

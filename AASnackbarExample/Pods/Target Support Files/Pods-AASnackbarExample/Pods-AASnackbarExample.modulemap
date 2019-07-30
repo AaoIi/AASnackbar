@@ -1,0 +1,6 @@
+framework module Pods_AASnackbarExample {
+  umbrella header "Pods-AASnackbarExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

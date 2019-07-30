@@ -1,0 +1,16 @@
+PODS:
+  - AASnackbar (1.0.1)
+
+DEPENDENCIES:
+  - AASnackbar (from `../AASnackbar/`)
+
+EXTERNAL SOURCES:
+  AASnackbar:
+    :path: "../AASnackbar/"
+
+SPEC CHECKSUMS:
+  AASnackbar: 97a43d8b0b9f9a8752deffb27a206b41c09b1590
+
+PODFILE CHECKSUM: 8e259d734f58a658ab942efe172116a6dfb256a6
+
+COCOAPODS: 1.7.2

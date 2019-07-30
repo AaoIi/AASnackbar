@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BD86B237DF977A4A8515AE5C78B718E /* AASnackbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260B05898F1F99BBC982E057A5A56B88 /* AASnackbar.xib */; };
+		114CC2D38459C69C9946BC449609CF08 /* Pods-AASnackbarExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D784592AE1D55A1070B23DF8555BBE3 /* Pods-AASnackbarExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA1903804954535B1E24CDF051ECA99 /* AASnackbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFDDA1BDB0D0E33E468E7CB50F520D2 /* AASnackbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C71FDF9276FEC0B87B5072BEBDA2845 /* AASnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9852CDE45E4E3385F5C5A6A0072A992 /* AASnackbar-dummy.m */; };
+		3982403E35770314533D24AFC4CE9712 /* AASnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EF37B865E0C3AB4273EC700120FE40 /* AASnackbar.swift */; };
+		504E16BCEC16B0E8F123E9FE86C25B03 /* Pods-AASnackbarExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBEC57EC8CC2463386DFAC249957C49 /* Pods-AASnackbarExample-dummy.m */; };
+		7C8A70D449C8B09D18B2908069C66AF5 /* AASnackbar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE370CD6F6983A576106836D3AC96454 /* AASnackbar.bundle */; };
+		7E3F950232451EFB311B189EC544DC3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		98136EEDE9CD08313F3AEE9B521AD71C /* AASnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = FF5BEA81F147054B4139A34BD7559598 /* AASnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F01CFE30D80C69703A45DB5CF47120B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F675EDC602E8FE92ECE12CF868FF6B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15CBE97E81A0E6A10856E292447B5D8;
+			remoteInfo = "AASnackbar-AASnackbar";
+		};
+		C828BC8EE1C6B5B5395E121D02010FEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA46FB99DBCF20A3BA39FC863FB67853;
+			remoteInfo = AASnackbar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0912D2854A5FEE3C40770CB8AE19A895 /* AASnackbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AASnackbar-Info.plist"; sourceTree = "<group>"; };
+		1D0A35C8055E0430A893D91D27F8EF72 /* ResourceBundle-AASnackbar-AASnackbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AASnackbar-AASnackbar-Info.plist"; sourceTree = "<group>"; };
+		260B05898F1F99BBC982E057A5A56B88 /* AASnackbar.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AASnackbar.xib; path = AASnackbar/AASnackbar.xib; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		349CAE1F536208264F23C09A53AF1217 /* Pods-AASnackbarExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AASnackbarExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4CA4228941A0BF115AACA7FF15B4A1A4 /* Pods-AASnackbarExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AASnackbarExample-frameworks.sh"; sourceTree = "<group>"; };
+		5B8CF682F090C1BD7F762F7565C2F6D7 /* Pods-AASnackbarExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AASnackbarExample.modulemap"; sourceTree = "<group>"; };
+		5D784592AE1D55A1070B23DF8555BBE3 /* Pods-AASnackbarExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AASnackbarExample-umbrella.h"; sourceTree = "<group>"; };
+		6C6152703E776AA515E11662709D0C0D /* Pods-AASnackbarExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AASnackbarExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C721463D971DB8FDDD75611A461DC99 /* AASnackbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AASnackbar.modulemap; sourceTree = "<group>"; };
+		6E240A362002B9914D0BFC184A415C56 /* AASnackbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AASnackbar.framework; path = AASnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED698ADD0D557F4AC80149BD256264F /* Pods_AASnackbarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AASnackbarExample.framework; path = "Pods-AASnackbarExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DBEC57EC8CC2463386DFAC249957C49 /* Pods-AASnackbarExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AASnackbarExample-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7124E4817F73974CDA7FADB4D0AF5F6 /* Pods-AASnackbarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AASnackbarExample.debug.xcconfig"; sourceTree = "<group>"; };
+		AABCD08F4D81F2A72203CAC73EA18690 /* AASnackbar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AASnackbar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AAFDDA1BDB0D0E33E468E7CB50F520D2 /* AASnackbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AASnackbar-umbrella.h"; sourceTree = "<group>"; };
+		B5C30148E309EA747B617936A994F082 /* Pods-AASnackbarExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AASnackbarExample-Info.plist"; sourceTree = "<group>"; };
+		BABCAE0F949DC498AA8B6692AED5B1FE /* Pods-AASnackbarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AASnackbarExample.release.xcconfig"; sourceTree = "<group>"; };
+		C9852CDE45E4E3385F5C5A6A0072A992 /* AASnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AASnackbar-dummy.m"; sourceTree = "<group>"; };
+		D2719CBDD4DD179DFF5BD55EC6D58159 /* AASnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AASnackbar.xcconfig; sourceTree = "<group>"; };
+		E61FBFDDBFE1DA8FC2BE1BB210DF9E9C /* AASnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AASnackbar-prefix.pch"; sourceTree = "<group>"; };
+		EE370CD6F6983A576106836D3AC96454 /* AASnackbar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AASnackbar.bundle; path = "AASnackbar-AASnackbar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7EF37B865E0C3AB4273EC700120FE40 /* AASnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AASnackbar.swift; path = AASnackbar/AASnackbar.swift; sourceTree = "<group>"; };
+		FF5BEA81F147054B4139A34BD7559598 /* AASnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AASnackbar.h; path = AASnackbar/AASnackbar.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29AB38E28283C5C60E84DAD1BA2D82FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01CFE30D80C69703A45DB5CF47120B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAC0A9CBD8B1703B16C3ABB4AAA8667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB0B697E8209EEB9490711FDA4627AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3F950232451EFB311B189EC544DC3F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0834960E6EB71973F4515490084B18CF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AABCD08F4D81F2A72203CAC73EA18690 /* AASnackbar.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3BE637D6523C0246A2D0F354F9E2FC86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				260B05898F1F99BBC982E057A5A56B88 /* AASnackbar.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		50B6405206BFE7177FF526D003C2DFBE /* AASnackbar */ = {
+			isa = PBXGroup;
+			children = (
+				FF5BEA81F147054B4139A34BD7559598 /* AASnackbar.h */,
+				F7EF37B865E0C3AB4273EC700120FE40 /* AASnackbar.swift */,
+				0834960E6EB71973F4515490084B18CF /* Pod */,
+				3BE637D6523C0246A2D0F354F9E2FC86 /* Resources */,
+				57F465E0F4A4D219945A1B4D75646BC4 /* Support Files */,
+			);
+			name = AASnackbar;
+			path = ../../AASnackbar;
+			sourceTree = "<group>";
+		};
+		57F465E0F4A4D219945A1B4D75646BC4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C721463D971DB8FDDD75611A461DC99 /* AASnackbar.modulemap */,
+				D2719CBDD4DD179DFF5BD55EC6D58159 /* AASnackbar.xcconfig */,
+				C9852CDE45E4E3385F5C5A6A0072A992 /* AASnackbar-dummy.m */,
+				0912D2854A5FEE3C40770CB8AE19A895 /* AASnackbar-Info.plist */,
+				E61FBFDDBFE1DA8FC2BE1BB210DF9E9C /* AASnackbar-prefix.pch */,
+				AAFDDA1BDB0D0E33E468E7CB50F520D2 /* AASnackbar-umbrella.h */,
+				1D0A35C8055E0430A893D91D27F8EF72 /* ResourceBundle-AASnackbar-AASnackbar-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../AASnackbarExample/Pods/Target Support Files/AASnackbar";
+			sourceTree = "<group>";
+		};
+		A28D4FBD49554A79B3D7D6847804693E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50B6405206BFE7177FF526D003C2DFBE /* AASnackbar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CAD7ACDAB5E1D9E769282FD3B21E97E3 /* Pods-AASnackbarExample */ = {
+			isa = PBXGroup;
+			children = (
+				5B8CF682F090C1BD7F762F7565C2F6D7 /* Pods-AASnackbarExample.modulemap */,
+				349CAE1F536208264F23C09A53AF1217 /* Pods-AASnackbarExample-acknowledgements.markdown */,
+				6C6152703E776AA515E11662709D0C0D /* Pods-AASnackbarExample-acknowledgements.plist */,
+				8DBEC57EC8CC2463386DFAC249957C49 /* Pods-AASnackbarExample-dummy.m */,
+				4CA4228941A0BF115AACA7FF15B4A1A4 /* Pods-AASnackbarExample-frameworks.sh */,
+				B5C30148E309EA747B617936A994F082 /* Pods-AASnackbarExample-Info.plist */,
+				5D784592AE1D55A1070B23DF8555BBE3 /* Pods-AASnackbarExample-umbrella.h */,
+				A7124E4817F73974CDA7FADB4D0AF5F6 /* Pods-AASnackbarExample.debug.xcconfig */,
+				BABCAE0F949DC498AA8B6692AED5B1FE /* Pods-AASnackbarExample.release.xcconfig */,
+			);
+			name = "Pods-AASnackbarExample";
+			path = "Target Support Files/Pods-AASnackbarExample";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A28D4FBD49554A79B3D7D6847804693E /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D215A372528AB41D192447B6BC56EE9E /* Products */,
+				D0143AC0DD45CE2A1F57E1C9B8DB5453 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0143AC0DD45CE2A1F57E1C9B8DB5453 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAD7ACDAB5E1D9E769282FD3B21E97E3 /* Pods-AASnackbarExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D215A372528AB41D192447B6BC56EE9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE370CD6F6983A576106836D3AC96454 /* AASnackbar.bundle */,
+				6E240A362002B9914D0BFC184A415C56 /* AASnackbar.framework */,
+				6ED698ADD0D557F4AC80149BD256264F /* Pods_AASnackbarExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		90BD8263E7469EFDD6BF3703CAB09038 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA1903804954535B1E24CDF051ECA99 /* AASnackbar-umbrella.h in Headers */,
+				98136EEDE9CD08313F3AEE9B521AD71C /* AASnackbar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD920139DD80327BACD59AE7A911A336 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114CC2D38459C69C9946BC449609CF08 /* Pods-AASnackbarExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D5F3F30DE77B317D97B63007E5161DB /* Pods-AASnackbarExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4812BE454FCE8059594E55574E0E709C /* Build configuration list for PBXNativeTarget "Pods-AASnackbarExample" */;
+			buildPhases = (
+				AD920139DD80327BACD59AE7A911A336 /* Headers */,
+				8D14D0A3E6A65E18833C4CBC21F8AF01 /* Sources */,
+				29AB38E28283C5C60E84DAD1BA2D82FC /* Frameworks */,
+				05C05A3B591948994C14CE0FCE541E3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C07FF1DB9F8D7DE8138024294DFE92D8 /* PBXTargetDependency */,
+			);
+			name = "Pods-AASnackbarExample";
+			productName = "Pods-AASnackbarExample";
+			productReference = 6ED698ADD0D557F4AC80149BD256264F /* Pods_AASnackbarExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A15CBE97E81A0E6A10856E292447B5D8 /* AASnackbar-AASnackbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79A5BED40168F7E954B12AFA2101DCFC /* Build configuration list for PBXNativeTarget "AASnackbar-AASnackbar" */;
+			buildPhases = (
+				DBD50D17809AA0F85DFF8BD83794129D /* Sources */,
+				6EAC0A9CBD8B1703B16C3ABB4AAA8667 /* Frameworks */,
+				81F7568691AB9BC597CC90C1E5192A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AASnackbar-AASnackbar";
+			productName = "AASnackbar-AASnackbar";
+			productReference = EE370CD6F6983A576106836D3AC96454 /* AASnackbar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DA46FB99DBCF20A3BA39FC863FB67853 /* AASnackbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 161E5F4CECED63D62E192FEF24A565FD /* Build configuration list for PBXNativeTarget "AASnackbar" */;
+			buildPhases = (
+				90BD8263E7469EFDD6BF3703CAB09038 /* Headers */,
+				24E7DEF189C8C02FD00FFB534082A142 /* Sources */,
+				9BB0B697E8209EEB9490711FDA4627AE /* Frameworks */,
+				0E274B7442C09AFD7EAA571CBD869EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				098B2D3D48D28F377CF2B40375B8D81D /* PBXTargetDependency */,
+			);
+			name = AASnackbar;
+			productName = AASnackbar;
+			productReference = 6E240A362002B9914D0BFC184A415C56 /* AASnackbar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D215A372528AB41D192447B6BC56EE9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA46FB99DBCF20A3BA39FC863FB67853 /* AASnackbar */,
+				A15CBE97E81A0E6A10856E292447B5D8 /* AASnackbar-AASnackbar */,
+				8D5F3F30DE77B317D97B63007E5161DB /* Pods-AASnackbarExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05C05A3B591948994C14CE0FCE541E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E274B7442C09AFD7EAA571CBD869EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C8A70D449C8B09D18B2908069C66AF5 /* AASnackbar.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F7568691AB9BC597CC90C1E5192A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BD86B237DF977A4A8515AE5C78B718E /* AASnackbar.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24E7DEF189C8C02FD00FFB534082A142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C71FDF9276FEC0B87B5072BEBDA2845 /* AASnackbar-dummy.m in Sources */,
+				3982403E35770314533D24AFC4CE9712 /* AASnackbar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D14D0A3E6A65E18833C4CBC21F8AF01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504E16BCEC16B0E8F123E9FE86C25B03 /* Pods-AASnackbarExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD50D17809AA0F85DFF8BD83794129D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		098B2D3D48D28F377CF2B40375B8D81D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AASnackbar-AASnackbar";
+			target = A15CBE97E81A0E6A10856E292447B5D8 /* AASnackbar-AASnackbar */;
+			targetProxy = 2F675EDC602E8FE92ECE12CF868FF6B1 /* PBXContainerItemProxy */;
+		};
+		C07FF1DB9F8D7DE8138024294DFE92D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AASnackbar;
+			target = DA46FB99DBCF20A3BA39FC863FB67853 /* AASnackbar */;
+			targetProxy = C828BC8EE1C6B5B5395E121D02010FEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E1694F22CEAAB1F6F4AD8CCCDF98FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BABCAE0F949DC498AA8B6692AED5B1FE /* Pods-AASnackbarExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AASnackbarExample/Pods-AASnackbarExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AASnackbarExample/Pods-AASnackbarExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		876A544C9F8E89ED9C15F0EA1B0CC44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2719CBDD4DD179DFF5BD55EC6D58159 /* AASnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AASnackbar";
+				INFOPLIST_FILE = "Target Support Files/AASnackbar/ResourceBundle-AASnackbar-AASnackbar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = AASnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		947D2629D5A72CEDDC76251AD4CC100C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2719CBDD4DD179DFF5BD55EC6D58159 /* AASnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AASnackbar/AASnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AASnackbar/AASnackbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AASnackbar/AASnackbar.modulemap";
+				PRODUCT_MODULE_NAME = AASnackbar;
+				PRODUCT_NAME = AASnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A5B0BB1E1E0BFF1803730B6AC3D07DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2719CBDD4DD179DFF5BD55EC6D58159 /* AASnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AASnackbar";
+				INFOPLIST_FILE = "Target Support Files/AASnackbar/ResourceBundle-AASnackbar-AASnackbar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = AASnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BBCB2DC416E6B261F68B919B5B0E3E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2719CBDD4DD179DFF5BD55EC6D58159 /* AASnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AASnackbar/AASnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AASnackbar/AASnackbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AASnackbar/AASnackbar.modulemap";
+				PRODUCT_MODULE_NAME = AASnackbar;
+				PRODUCT_NAME = AASnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBA7AAD0DC37D4B30C2A465E69D5E442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7124E4817F73974CDA7FADB4D0AF5F6 /* Pods-AASnackbarExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AASnackbarExample/Pods-AASnackbarExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AASnackbarExample/Pods-AASnackbarExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		161E5F4CECED63D62E192FEF24A565FD /* Build configuration list for PBXNativeTarget "AASnackbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBCB2DC416E6B261F68B919B5B0E3E46 /* Debug */,
+				947D2629D5A72CEDDC76251AD4CC100C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4812BE454FCE8059594E55574E0E709C /* Build configuration list for PBXNativeTarget "Pods-AASnackbarExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA7AAD0DC37D4B30C2A465E69D5E442 /* Debug */,
+				2E1694F22CEAAB1F6F4AD8CCCDF98FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79A5BED40168F7E954B12AFA2101DCFC /* Build configuration list for PBXNativeTarget "AASnackbar-AASnackbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B0BB1E1E0BFF1803730B6AC3D07DA6 /* Debug */,
+				876A544C9F8E89ED9C15F0EA1B0CC44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
