@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
 
   # spec.platform     = :ios
   spec.platform     = :ios, "9.0"
-  spec.swift_version = '4.0'
+  spec.swift_version = '5.0'
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
-  spec.source       = { :git => "https://github.com/AaoIi/AASnackbar.git", :tag => "1.0.1" }
+  spec.source       = { :git => "https://github.com/AaoIi/AASnackbar.git", :tag => "1.0.2" }
 
   spec.source_files  = 'AASnackbar/**/*.swift','AASnackbar/**/*.h'
   spec.ios.resource_bundle = {
