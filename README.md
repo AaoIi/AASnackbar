@@ -29,8 +29,11 @@ AASnackbar shows a short animated message at the bottom of the screen about Spec
 ## Preview Demo
 <img src="https://lh3.googleusercontent.com/qf4BcHD1IgXcQ-NQw4Vx4PwMsyxvgdaGyzgmYZKTKZO7i1V2LHmEUw=w373-h642-p-b1-c0x00999999">
 
+## Installation ##
+```pod 'AASnackbar'```
+
 ## How to use AASnackbar ##
-##### 1) import ```Classes Folder``` into your project <br/>
+##### 1) import AASnackbar <br/>
 ##### 2) Create object from AASnackbar ```var snackBar : AASnackbar!``` <br/>
 ##### 3) Show AASnackbar:<br/><br/>     
 
