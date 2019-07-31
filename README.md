@@ -1,36 +1,32 @@
 # AASnackbar
 
-## Latest Update
-
-#### 1.2.1 Release (6/17/2019)
-
-* Support Swift 5.0
-* Minor improvements.
-* xib design instead of programmatically.
-* Safe area is now supported.
-
-#### 1.2 Release (6/15/2017)
-
-* Support Swift 3.0
-
-#### 1.2 Release (7/26/2016)
-
-* Warning fixes.<br/>
-* Support Swift 2.2
-
-#### 1.1 Release (12/31/2015)
-
-* Major changes and much easier to use.<br/>
-* Bug fixes
-
 ## Description
 AASnackbar shows a short animated message at the bottom of the screen about Specific event with duration.
 
 ## Preview Demo
 <img src="https://lh3.googleusercontent.com/qf4BcHD1IgXcQ-NQw4Vx4PwMsyxvgdaGyzgmYZKTKZO7i1V2LHmEUw=w373-h642-p-b1-c0x00999999">
 
-## Installation ##
-```pod 'AASnackbar'```
+## Installation
+
+### CocoaPods
+[CocoaPods][] is a dependency manager for Cocoa projects. To install AASnackbar with CocoaPods:
+
+1. Make sure CocoaPods is [installed][CocoaPods Installation].
+
+2. Update your Podfile to include the following:
+
+``` ruby
+use_frameworks!
+pod 'AASnackbar'
+```
+
+3. Run `pod install`.
+
+[CocoaPods]: https://cocoapods.org
+[CocoaPods Installation]: https://guides.cocoapods.org/using/getting-started.html#getting-started
+
+4. In your code import AASnackbar like so:
+`import AASnackbar`
 
 ## How to use AASnackbar ##
 ##### 1) import AASnackbar <br/>
@@ -102,7 +98,7 @@ barHeight = 60
 
 ## Requirements ##
 * Swift 5.0+
-* IOS 7.0+
+* IOS 9.0+
 
 ## License ##
 
