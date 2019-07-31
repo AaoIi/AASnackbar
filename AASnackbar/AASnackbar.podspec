@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AASnackbar"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "Snackbar with short animated message and may contain action for IOS and written in Swift"
 
   spec.description  = "AASnackbar shows a short animated message at the bottom of the screen about Specific event with duration."
@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
-  spec.source       = { :git => "https://github.com/AaoIi/AASnackbar.git", :tag => "1.0.2" }
+  spec.source       = { :git => "https://github.com/AaoIi/AASnackbar.git", :tag => "1.0.3" }
 
   spec.source_files  = 'AASnackbar/**/*.swift','AASnackbar/**/*.h'
   spec.ios.resource_bundle = {
