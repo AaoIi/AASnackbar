@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AASnackbar"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "Snackbar with short animated message and may contain action for IOS and written in Swift"
 
   spec.description  = "AASnackbar shows a short animated message at the bottom of the screen about Specific event with duration."
