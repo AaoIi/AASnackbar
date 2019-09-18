@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         
         snackBar = AASnackbar(addedToView: self.view, title: "No internet connection", duration: 3.0,animationType:.fade)
         snackBar.setTextColor(UIColor.white)
+        snackBar.setBackgroundColor(.green)
         snackBar.show()
         
     }

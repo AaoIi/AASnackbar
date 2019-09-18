@@ -29,6 +29,7 @@ public class AASnackbar: UIView {
     
     //MARK:- Customization
     public static var barHeight : CGFloat = 100
+    private var contentViewBackgroundColor : UIColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 1.0)
     
     // MARK: Constructors init
     
@@ -75,7 +76,7 @@ public class AASnackbar: UIView {
         }
         self.frame = CGRect(x: 0 , y: (self.frame.size.height) - AASnackbar.barHeight - (safeAreaBottomPadding ?? 0), width: self.frame.size.width, height: AASnackbar.barHeight)
         
-        contentView.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 1.0)
+        contentView.backgroundColor = contentViewBackgroundColor
         
         // Create label
         label.text = textTitle
@@ -142,6 +143,10 @@ public class AASnackbar: UIView {
     
     public func setTextColor(_ color:UIColor){
         self.label.textColor = color
+    }
+    
+    public func setBackgroundColor(_ color:UIColor){
+        self.contentView.backgroundColor = color
     }
     
     public func setButtonTextColor(_ color:UIColor){
